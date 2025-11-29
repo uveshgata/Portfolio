@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gata Mohammaduvesh </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/uvesh.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="logo" style="font-family: Audiowide, sans-serif;">CodeWithUvesh</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn" title="Toggle theme">☼</button>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+    <section class="hero-card">
+      <h1 class="hero-title" style="font-family: Audiowide, sans-serif;">HEY, I’M GATA MOHAMMADUVESH</h1>
+      <p class="hero-desc">
+        Computer Science graduate focusing on Data Science.
+        I build EDA and Weather Data Analysis projects using Python (NumPy, Pandas, Matplotlib, Seaborn, scikit-learn).
+        I post tutorials, project writeups and walkthroughs.
+      </p>
+      <p class="hero-links"><a href="projects.html">See projects</a> • <a href="about.html">About me</a></p>
+    </section>
+
+    <aside class="photo-card">
+      <div class="photo-wrap">        
+        <img src="images/Img.webp" alt="Profile placeholder">
+      </div>
+    </aside>
+
+    <section class="card-row card-a">
+      <div class="small-card">
+        <h3>Projects</h3>
+
+        <p>EDA • Weather Data Analysis</p>
+      </div>
+      <div class="small-card">
+        <h3>Skills</h3>
+        <p>HTML • CSS • Bootstrap • Python • SQL • NumPy • Pandas</p>
+      </div>
+    </section>
+
+    <section class="card-row card-b">
+      <div class="small-card">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:codewithuvesh@example.com" id="visible-mail">codewithuvesh@example.com</a></p>
+      </div>
+      <div class="small-card">
+        <h3>Status</h3>
+        <p>Learning: Data Science toolchain (status: learning)</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER with newsletter subscribe -->
+  <footer class="site-footer footer-news">
+    <div class="wrap footer-inner">
+      <div class="footer-top">
+        <h2 class="footer-heading">SUBSCRIBE TO CODEWITHUVESH</h2>
+        <p class="footer-sub">Get updates on Data Science projects, tutorials and analyses. Ask Data Science queries here — I'll try to help. Enter your email and click Subscribe.</p>
+
+        <div class="subscribe-row">
+          <input id="subscribeEmail" type="email" placeholder="Email address" aria-label="Email address">
+          <button id="subscribeBtn" class="subscribe-btn">Subscribe</button>
+        </div>
+        <div id="subMsg" class="sub-message" aria-live="polite"></div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="left">© <span id="yearFooter"></span> Gata Mohammaduvesh</div>
+        <div class="center" id="viewsCount">0 views</div>
+        <div class="right social-icons">
+          <a id="mailIcon" href="mailto:codewithuvesh@example.com" title="Email">✉</a>
+          <a id="gitIcon" href="https://github.com/your-github" title="GitHub" target="_blank" rel="noopener"></a>
+          <a id="lnkIcon" href="https://linkedin.com/in/your-profile" title="LinkedIn" target="_blank" rel="noopener">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
