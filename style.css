@@ -534,8 +534,7 @@ body.light .social-icons a {
     grid-auto-rows: auto;
     gap: 18px;
     padding: 16px;
-    border-radius: 20px;
-    width:fit-content;
+    border-radius: 20px;    
   }
 
   /* HERO full width */
@@ -682,4 +681,5 @@ body.light .social-icons a {
     display: none;
   }
 }
+
 
