@@ -521,59 +521,46 @@ body.light .social-icons a {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
+
+  /* Stack hero + photo vertically */
   .main-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 14px;
+    grid-auto-rows: auto;
+    gap: 18px;
+    padding: 0;
   }
 
-  .hero-desc {
-    max-width: 100%;
+  /* HERO full width */
+  .hero-card {
+    margin: 0;
+    border-radius: 20px;
   }
 
-  .hero-title {
-    font-size: 32px;
-    transform: none;
+  /* PHOTO full width + center */
+  .photo-card {
+    margin: 0;
+    border-radius: 20px;
+    padding: 14px;
   }
 
+  /* Fix image scaling */
   .photo-wrap img {
-    max-height: 280px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;   /* prevents stretching */
   }
 
+  /* Card rows full width */
   .card-row {
     flex-direction: column;
+    margin: 0;
   }
 
-  .tech-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .subscribe-row {
-    flex-direction: column;
-  }
-
-  .subscribe-row input#subscribeEmail {
-    max-width: 90%;
+  .small-card {
     width: 100%;
   }
-
-  .subscribe-btn {
-    width: 160px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
 }
 
-@media (max-width: 768px) {
-  .skill-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .skill-item::after {
-    width: 160px;
-  }
-}
+
