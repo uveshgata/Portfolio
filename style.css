@@ -168,8 +168,7 @@ body {
   height: auto;
   max-height: 420px;
   object-fit: cover;
-  display: block;
-  filter: grayscale(10%) contrast(90%);
+  display: block;  
   opacity: 0.98;
   border-radius: 10px;
 }
@@ -720,6 +719,7 @@ body.light .social-icons a {
     display: none;
   }
 }
+
 
 
 
