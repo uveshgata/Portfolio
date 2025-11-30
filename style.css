@@ -1,7 +1,7 @@
 :root {
   --bg: #071226;
   --card: #dceeff;
-  --muted: #071226;
+  --muted: hsl(219, 40%, 84%);
   --accent: #1c108e;
   --rounded: 28px;
   --text: #e6f0ff;
@@ -408,4 +408,5 @@ body.light .social-icons a {
     text-align: center;
   }
 }
+
 
