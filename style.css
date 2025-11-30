@@ -28,7 +28,7 @@
   .theme-btn{margin-left:16px;background:transparent;border:0;color:var(--muted);cursor:pointer;font-size:18px}
   
   /* main grid */
-  .main-grid{display:grid;grid-template-columns:1.35fr 0.85fr;grid-template-rows:auto auto;gap:22px;padding:18px 0;background-color: #202745;border-radius: 15px;margin-bottom: 20px;}
+  .main-grid{display:grid;grid-template-columns:1.35fr 0.85fr;grid-template-rows:auto auto;gap:22px;padding:18px 0;background-color:         #202745;border-radius: 15px;margin-bottom: 20px;}
   .hero-card{
     background:linear-gradient(312deg,#192633 0%, #ebebeb 100%);
     color:#071226;
@@ -85,5 +85,20 @@
   }
 
   
+.sub-message {
+  color: var(--muted);
+  margin-top: 6px;
+  min-height: 18px;
+  font-size: 14px;
+}
+
+.sub-message.error {
+  color: #ff8a8a;
+}
+
+.sub-message.success {
+  color: #6be3a6;
+}
+
 
 
