@@ -409,5 +409,35 @@ body.light .social-icons a {
   }
 }
 
+/* ========== STATUS CARD ========== */
+.status-card {
+  background: linear-gradient(145deg, #552c86 0%, #2f1c5a 40%, #1c1433 100%);
+}
+
+.status-card h3 {
+  color: #f7ebff;
+}
+
+.status-main {
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.status-list li {
+  margin-bottom: 4px;
+}
+
+.small-card p {
+  color: #f4f4ff;
+  font-size: 14px;
+}
 
 
