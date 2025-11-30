@@ -60,7 +60,7 @@ body {
 }
 
 .nav a {
-  color: var(--muted);
+  color: #071226;
   text-decoration: none;
   font-size: 15px;
   position: relative;
@@ -408,5 +408,6 @@ body.light .social-icons a {
     text-align: center;
   }
 }
+
 
 
