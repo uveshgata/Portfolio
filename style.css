@@ -582,11 +582,10 @@ body.light .social-icons a {
     font-size: 18px;
   }
 
-  .nav {
-    width: 100%;
+  .nav {    
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 40px;
   }
 
   .nav a {
@@ -609,7 +608,7 @@ body.light .social-icons a {
   }
 
   .hero-title {
-    font-size: 32px;
+    font-size: 25px;
     transform: none;
   }
 
@@ -694,3 +693,4 @@ body.light .social-icons a {
     display: none;
   }
 }
+
