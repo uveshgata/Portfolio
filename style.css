@@ -663,12 +663,15 @@ body.light .social-icons a {
 
 /* ultra-small phones ~250–360px */
 @media (max-width: 360px) {
+  .nav{
+    gap:35px;
+  }
   .wrap {
     padding: 12px 6px;
   }
 
   .hero-title {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .hero-desc {
@@ -693,4 +696,5 @@ body.light .social-icons a {
     display: none;
   }
 }
+
 
