@@ -60,7 +60,7 @@ body {
 }
 
 .nav a {
-  color: #071226;
+  color: var(--muted);
   text-decoration: none;
   font-size: 15px;
   position: relative;
