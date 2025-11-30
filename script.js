@@ -13,8 +13,8 @@ const subBtn = document.getElementById('subscribeBtn');
 const subEmail = document.getElementById('subscribeEmail');
 const subMsg = document.getElementById('subMsg');
 
-function isEmailValid(e){
-  return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(e);
+function isEmailValid(e) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 }
 
 subBtn.addEventListener('click', ()=> {
@@ -40,7 +40,11 @@ subBtn.addEventListener('click', ()=> {
 
   // open mailto so user is ready to send the query to you (community reach)
   // update the mailto address below to your real address
-  const mailto = 'mailto:codewithuvesh@example.com?subject=Data%20Science%20Query&body=Hi%20Uvesh%2C%0A%0AI%20have%20a%20question%20about%20...';
+  const mailto =
+  'mailto:uveshgata@gmail.com' +
+  '?subject=Data%20Science%20Query' +
+  '&body=Hi%20Uvesh%2C%0A%0AI%20have%20a%20question%20about%20...';
+
   window.open(mailto, '_blank');
 });
 
@@ -48,3 +52,4 @@ subBtn.addEventListener('click', ()=> {
 subEmail.addEventListener('keydown', (e)=>{
   if(e.key === 'Enter') { subBtn.click(); }
 });
+
