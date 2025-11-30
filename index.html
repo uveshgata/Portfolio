@@ -3,16 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gata Mohammaduvesh </title>
+  <title>Gata Mohammaduvesh</title>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <!-- Devicon Icons -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="uvesh.png">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />          
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
       <div class="logo" style="font-family: Audiowide, sans-serif;">CodeWithUvesh</div>
@@ -26,90 +33,128 @@
     </div>
   </header>
 
-  <main class="wrap main-grid">
-    <section class="hero-card">
-      <h1 class="hero-title" style="font-family: Audiowide, sans-serif;">HEY, I’M GATA MOHAMMADUVESH</h1>
-      <p class="hero-desc">
-        Computer Science graduate focusing on Data Science.
-        I build EDA and Weather Data Analysis projects using Python (NumPy, Pandas, Matplotlib, Seaborn, scikit-learn).
-        I post tutorials, project writeups and walkthroughs.
-      </p>
-      <p class="hero-links"><a href="projects.html">See projects</a> • <a href="about.html">About me</a></p>
+  <!-- MAIN HERO + CARDS -->
+  <main class="wrap">
+    <section class="main-grid">
+      <section class="hero-card">
+        <h1 class="hero-title" style="font-family: Audiowide, sans-serif;">HEY, I’M GATA MOHAMMADUVESH</h1>
+        <p class="hero-desc">
+          Computer Science graduate focusing on Data Science.
+          I build EDA and Weather Data Analysis projects using Python
+          (NumPy, Pandas, Matplotlib, Seaborn, scikit-learn).
+          I post tutorials, project writeups and walkthroughs.
+        </p>
+        <p class="hero-links">
+          <a href="projects.html">See projects</a> •
+          <a href="about.html">About me</a>
+        </p>
+      </section>
+
+      <aside class="photo-card">
+        <div class="photo-wrap">
+          <img src="uv_profile.jpeg" alt="Profile photo of Gata Mohammaduvesh">
+        </div>
+      </aside>
+
+      <!-- Projects + Skills row -->
+      <section class="card-row card-a">
+        <div class="small-card">
+          <h3>Projects</h3>
+          <p>EDA • Weather Data Analysis</p>
+        </div>
+
+        <!-- Skills card with icons -->
+        <div class="small-card skills-card">
+          <h3>Skills</h3>
+          <div class="skill-grid">
+            <div class="skill-item" data-tooltip="HyperText Markup Language for structuring web pages.">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML logo">
+              <span>HTML</span>
+            </div>
+            <div class="skill-item" data-tooltip="CSS for styling and responsive layouts.">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS logo">
+              <span>CSS</span>
+            </div>
+            <div class="skill-item" data-tooltip="Bootstrap for faster, responsive UI components.">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap logo">
+              <span>Bootstrap</span>
+            </div>
+            <div class="skill-item" data-tooltip="Python for scripting, data analysis and automation.">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo">
+              <span>Python</span>
+            </div>
+            <div class="skill-item" data-tooltip="SQL for querying and managing structured data.">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL logo">
+              <span>SQL</span>
+            </div>
+            <div class="skill-item" data-tooltip="NumPy for numerical computing and arrays.">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-plain.svg" alt="NumPy logo">
+              <span>NumPy</span>
+            </div>
+            <div class="skill-item" data-tooltip="Pandas for data wrangling and analysis.">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" alt="Pandas logo">
+              <span>Pandas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact + Status row -->
+      <section class="card-row card-b">
+        <div class="small-card">
+          <h3>Contact</h3>
+          <p>
+            Email:
+            <a href="mailto:uveshgata@gmail.com" id="visible-mail">uveshgata@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="small-card status-card">
+          <h3>Status</h3>
+          <p class="status-main">Actively building my Data Science foundation.</p>
+          <ul class="status-list">
+            <li>Working on EDA & weather data analysis projects in Python.</li>
+            <li>Practicing DSA to improve problem-solving and coding logic.</li>
+            <li>Exploring NumPy, Pandas, Matplotlib & scikit-learn step by step.</li>
+            <li>Open to beginner-friendly projects, collaborations and guidance.</li>
+          </ul>
+        </div>
+      </section>
     </section>
 
-    <aside class="photo-card">
-      <div class="photo-wrap">        
-        <img src="uv_profile.jpeg"alt="Profile placeholder">
-      </div>
-    </aside>
+    <!-- TECH STACK SECTION -->
+    <section class="tech-section">
+      <h2 class="tech-heading">Tech Stack</h2>
+      <p class="tech-subtitle">
+        Tools and technologies I currently use while learning and building Data Science projects.
+      </p>
 
-    <section class="card-row card-a">
-  <div class="small-card">
-    <h3>Projects</h3>
-    <p>EDA • Weather Data Analysis</p>
-  </div>
-
-  <!-- Updated Skills card with logos -->
-  <div class="small-card skills-card">
-    <h3>Skills</h3>
-    <div class="skill-grid">
-      <div class="skill-item">
-        <img src="icons/html.svg" alt="HTML logo">
-        <span>HTML</span>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h3>Data & Analysis</h3>
+          <p>Python • NumPy • Pandas • Matplotlib • Seaborn • Jupyter Notebook</p>
+        </div>
+        <div class="tech-card">
+          <h3>Web & Presentation</h3>
+          <p>HTML • CSS • Bootstrap • Basic responsive layouts for dashboards and reports</p>
+        </div>
+        <div class="tech-card">
+          <h3>Databases & Storage</h3>
+          <p>SQL • CSV datasets • Basic data cleaning and preprocessing workflow</p>
+        </div>
       </div>
-      <div class="skill-item">
-        <img src="icons/css.svg" alt="CSS logo">
-        <span>CSS</span>
-      </div>
-      <div class="skill-item">
-        <img src="icons/bootstrap.svg" alt="Bootstrap logo">
-        <span>Bootstrap</span>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-        <span>Python</span>
-      </div>
-      <div class="skill-item">
-        <img src="icons/sql.svg" alt="SQL logo">
-        <span>SQL</span>
-      </div>
-      <div class="skill-item">
-        <img src="icons/numpy.svg" alt="NumPy logo">
-        <span>NumPy</span>
-      </div>
-      <div class="skill-item">
-        <img src="icons/pandas.svg" alt="Pandas logo">
-        <span>Pandas</span>
-      </div>
-    </div>
-  </div>
-</section>
-    <section class="card-row card-b">
-  <div class="small-card">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:uveshgata@gmail.com" id="visible-mail">uveshgata@gmail.com</a></p>
-  </div>
-
-  <!-- Updated Status card -->
-  <div class="small-card status-card">
-    <h3>Status</h3>
-    <p class="status-main">Actively building my Data Science foundation.</p>
-    <ul class="status-list">
-      <li>Working on EDA & weather data analysis projects in Python.</li>
-      <li>Practicing DSA to improve problem-solving and coding logic.</li>
-      <li>Exploring NumPy, Pandas, Matplotlib & scikit-learn step by step.</li>
-      <li>Open to beginner-friendly projects, collaborations and guidance.</li>
-    </ul>
-  </div>
-</section>
+    </section>
   </main>
 
-  <!-- FOOTER with newsletter subscribe -->
+  <!-- FOOTER -->
   <footer class="site-footer footer-news">
     <div class="wrap footer-inner">
       <div class="footer-top">
         <h2 class="footer-heading">SUBSCRIBE TO CODEWITHUVESH</h2>
-        <p class="footer-sub">Get updates on Data Science projects, tutorials and analyses. Ask Data Science queries here — I'll try to help. Enter your email and click Subscribe.</p>
+        <p class="footer-sub">
+          Get updates on Data Science projects, tutorials and analyses.
+          Ask Data Science queries here — I'll try to help. Enter your email and click Subscribe.
+        </p>
 
         <div class="subscribe-row">
           <input id="subscribeEmail" type="email" placeholder="Email address" aria-label="Email address">
@@ -130,6 +175,7 @@
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script src="script.js"></script>
 </body>
 </html>
