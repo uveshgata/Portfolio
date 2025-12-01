@@ -17,6 +17,7 @@ if (viewsCountEl && typeof Storage !== 'undefined') {
 // ========== THEME TOGGLE ========== //
 const themeToggle = document.getElementById('themeToggle');
 
+// Helper: Read theme from storage
 function getStoredTheme() {
   try {
     return localStorage.getItem('cw_theme');
@@ -25,28 +26,46 @@ function getStoredTheme() {
   }
 }
 
+// Helper: Save theme to storage
 function setStoredTheme(value) {
   try {
     localStorage.setItem('cw_theme', value);
   } catch {
-    // ignore if storage blocked
+    // ignore if blocked
   }
 }
 
-// Apply saved theme on load
+// Helper: Update nav link colors
+function updateNavLinkColors(isLight) {
+  document.querySelectorAll("nav a").forEach(link => {
+    link.style.color = isLight ? "#071226" : "#ffffff";
+  });
+}
+
+// Apply saved theme on page load
 if (themeToggle) {
   const savedTheme = getStoredTheme();
+
   if (savedTheme === 'light') {
     document.body.classList.add('light');
-    document.querySelectorAll("nav a").forEach(link=>{link.style.color="#071226";});
+    updateNavLinkColors(true);
     themeToggle.textContent = '☾';
   } else {
+    updateNavLinkColors(false);
     themeToggle.textContent = '☼';
   }
 
+  // Toggle theme on click
   themeToggle.addEventListener('click', () => {
     const isLight = document.body.classList.toggle('light');
+
+    // Update nav colors
+    updateNavLinkColors(isLight);
+
+    // Update icon
     themeToggle.textContent = isLight ? '☾' : '☼';
+
+    // Save theme
     setStoredTheme(isLight ? 'light' : 'dark');
   });
 }
@@ -118,5 +137,6 @@ if (subBtn && subEmail && subMsg) {
     }
   });
 }
+
 
 
