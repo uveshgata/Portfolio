@@ -38,6 +38,7 @@ if (themeToggle) {
   const savedTheme = getStoredTheme();
   if (savedTheme === 'light') {
     document.body.classList.add('light');
+    document.querySelectorAll("nav a").foreach(link=>{link.style.color="#071226";});
     themeToggle.textContent = '☾';
   } else {
     themeToggle.textContent = '☼';
@@ -117,3 +118,4 @@ if (subBtn && subEmail && subMsg) {
     }
   });
 }
+
